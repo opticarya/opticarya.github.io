@@ -3,24 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Personal homepage — portfolio, projects, publications, and contact." />
-  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Optical engineering firm specializing in lens design, tolerancing, and Zemax (sequential & non-sequential) — based in Tucson, AZ." />
+  <title>Desert Optics Lab — Lens Design & Tolerancing (Tucson, AZ)</title>
 
   <!-- Basic styling (responsive, accessible, modern) -->
   <style>
     :root{
-      --bg: #0f1724;
-      --card: #0b1220;
+      --bg: #081021;
+      --card: #071423;
       --muted: #9aa4b2;
       --accent: #4f9ef1;
-      --glass: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.03);
       --radius: 12px;
       --max-width: 1000px;
       --gap: 20px;
       color-scheme: dark;
     }
 
-    /* Light theme override (switch with .light on <html>) */
     .light {
       --bg: #f7fafc;
       --card: #ffffff;
@@ -35,7 +34,7 @@
     body{
       margin:0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg,var(--bg), #071021 70%);
+      background: linear-gradient(180deg,var(--bg), #041025 70%);
       color: #e6eef8;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
@@ -129,12 +128,11 @@
     .avatar{
       width:140px;height:140px;border-radius:14px;
       display:grid;place-items:center;font-size:48px;font-weight:700;
-      background:linear-gradient(135deg,#17324a, #0b2233);
+      background:linear-gradient(135deg,#133447, #072033);
       box-shadow: 0 8px 24px rgba(4,10,20,0.6);
     }
     .small{font-size:13px;color:var(--muted);text-align:center}
 
-    /* Grid of cards */
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 
     .card{
@@ -152,13 +150,11 @@
       color:var(--muted);font-size:13px;
     }
 
-    /* Responsive adjustments */
     @media (max-width:900px){
       .hero{grid-template-columns: 1fr}
       header{flex-direction:column;align-items:flex-start;gap:12px}
     }
 
-    /* small utilities */
     .meta {display:flex;gap:8px;flex-wrap:wrap}
     .pill{background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:999px;font-size:13px}
     .project-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
@@ -172,19 +168,19 @@
   <div class="wrap" role="document">
     <header>
       <a class="brand" href="#" aria-label="Go to homepage">
-        <div class="logo" aria-hidden="true">YN</div>
+        <div class="logo" aria-hidden="true">DOL</div>
         <div>
-          <h1>Your Name</h1>
-          <p>Optics · Imaging · Research</p>
+          <h1>Desert Optics Lab</h1>
+          <p>Lens design • Tolerancing • Zemax (Seq & Non-Seq)</p>
         </div>
       </a>
 
       <nav aria-label="Primary navigation">
+        <a class="navlink" href="#services">Services</a>
+        <a class="navlink" href="#projects">Sample projects</a>
         <a class="navlink" href="#about">About</a>
-        <a class="navlink" href="#projects">Projects</a>
-        <a class="navlink" href="#publications">Publications</a>
         <a class="navlink" href="#contact">Contact</a>
-        <a class="navlink primary" href="#resume">Resume</a>
+        <a class="navlink primary" href="#quote">Request quote</a>
       </nav>
     </header>
 
@@ -192,156 +188,166 @@
       <!-- HERO -->
       <section class="hero" aria-labelledby="hero-heading">
         <div class="intro">
-          <h2 id="hero-heading">Hi — I’m Your Name. I build optical + imaging systems.</h2>
-          <p class="lead">PhD candidate / researcher working on retinal imaging, fluidic lenses, and multispectral systems. I make hardware, software, and reproducible experiments that advance imaging science.</p>
+          <h2 id="hero-heading">Designing high-performance optics for industry and research.</h2>
+          <p class="lead">Desert Optics Lab is a Tucson-based optical engineering firm specializing in lens design, tolerancing analysis, and Zemax workflows — both sequential and non-sequential. We deliver manufacturable designs, verification, and simulation-ready files.</p>
 
           <div class="cta-row" role="group" aria-label="Primary actions">
-            <a class="btn btn-primary" href="#projects">View projects</a>
-            <a class="btn btn-ghost" href="#publications">See publications</a>
-            <a class="btn btn-ghost" href="resume.pdf" id="resume" download>Download resume</a>
+            <a class="btn btn-primary" href="#services">Our services</a>
+            <a class="btn btn-ghost" href="#projects">See sample projects</a>
+            <a class="btn btn-ghost" href="#quote">Request a quote</a>
           </div>
 
           <div style="margin-top:18px" class="meta">
-            <span class="pill">Python • MATLAB • ZEMAX</span>
-            <span class="pill">Open-source friendly</span>
-            <span class="pill">Available for collaboration</span>
+            <span class="pill">Lens Design</span>
+            <span class="pill">Tolerancing & MFG guidance</span>
+            <span class="pill">Zemax Sequential & Non-Sequential</span>
           </div>
         </div>
 
-        <aside class="profile" aria-label="Profile">
-          <div class="avatar" aria-hidden="true">YN</div>
+        <aside class="profile" aria-label="Founder profile">
+          <div class="avatar" aria-hidden="true">Dr</div>
           <div style="text-align:center">
-            <div style="font-weight:700">Your Name</div>
-            <div class="small">4th-year PhD — Retinal imaging · Optical engineering</div>
+            <div style="font-weight:700">Dr. Alex Founder</div>
+            <div class="small">Founder • PhD, University of Arizona</div>
           </div>
 
           <div style="width:100%;display:flex;gap:8px;justify-content:center">
-            <a class="btn btn-ghost" href="mailto:you@example.com" title="Email">Email</a>
+            <a class="btn btn-ghost" href="mailto:hello@desertopticslab.com" title="Email">Email</a>
             <a class="btn btn-ghost" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
           </div>
 
-          <div class="small">Based in Tucson, AZ</div>
+          <div class="small">Based in Tucson, AZ — available for consulting & partnerships</div>
         </aside>
       </section>
 
-      <!-- CARDS GRID -->
+      <!-- MAIN GRID -->
       <section style="display:grid;gap:16px;grid-template-columns:1fr 360px;">
         <div>
-          <!-- Projects -->
-          <div class="card" id="projects" aria-labelledby="projects-heading">
-            <h3 id="projects-heading">Selected projects</h3>
+          <!-- Services -->
+          <div class="card" id="services" aria-labelledby="services-heading">
+            <h3 id="services-heading">Services</h3>
+            <p class="muted" style="margin-top:8px">Tailored optical engineering services for startups, research labs, and manufacturers.</p>
 
-            <div class="grid" style="margin-top:12px">
-              <article class="card" aria-labelledby="p1">
-                <h4 id="p1">Multispectral Retinal Imager</h4>
-                <p class="muted">Custom multispectral camera + fluidic lens for spectral contrast imaging and registration.</p>
+            <div style="margin-top:12px" class="grid">
+              <article class="card" aria-labelledby="s1">
+                <h4 id="s1">Lens design</h4>
+                <p class="muted">From single-element lenses to multi-group imaging objectives — performance-driven design with manufacturability in mind.</p>
                 <div class="project-tags">
-                  <span class="tag">ZEMAX</span>
-                  <span class="tag">MATLAB</span>
-                  <span class="tag">Hardware</span>
+                  <span class="tag">Imaging</span>
+                  <span class="tag">Collimation</span>
+                  <span class="tag">Athermalization</span>
                 </div>
               </article>
 
-              <article class="card" aria-labelledby="p2">
-                <h4 id="p2">Real-time Focus Control</h4>
-                <p class="muted">Closed-loop focus system using adaptive fluidic lens and simple control firmware for quick acquisition.</p>
+              <article class="card" aria-labelledby="s2">
+                <h4 id="s2">Tolerancing & GD&T</h4>
+                <p class="muted">Monte Carlo tolerancing, sensitivity analysis, and practical manufacturing tolerances to control yield and cost.</p>
                 <div class="project-tags">
-                  <span class="tag">Embedded</span>
-                  <span class="tag">Control</span>
+                  <span class="tag">Monte Carlo</span>
+                  <span class="tag">Certifiable</span>
                 </div>
               </article>
 
-              <article class="card" aria-labelledby="p3">
-                <h4 id="p3">Open Lab Toolkit</h4>
-                <p class="muted">Scripts and measurement templates to standardize optical bench experiments and reproducible metrology.</p>
+              <article class="card" aria-labelledby="s3">
+                <h4 id="s3">Zemax workflows</h4>
+                <p class="muted">Complete Zemax workflows — sequential lens optimization and non-sequential stray light & scattering analysis.</p>
                 <div class="project-tags">
-                  <span class="tag">Open-source</span>
-                  <span class="tag">Data</span>
+                  <span class="tag">Sequential</span>
+                  <span class="tag">Non-sequential</span>
+                  <span class="tag">Optimization</span>
+                </div>
+              </article>
+
+              <article class="card" aria-labelledby="s4">
+                <h4 id="s4">Prototyping & verification</h4>
+                <p class="muted">Test plan creation, tolerance verification on-optic bench, interferometry guidance, and report-ready results.</p>
+                <div class="project-tags">
+                  <span class="tag">Interferometry</span>
+                  <span class="tag">Metrology</span>
                 </div>
               </article>
             </div>
           </div>
 
-          <!-- Publications -->
-          <div class="card" id="publications" aria-labelledby="pub-heading" style="margin-top:16px">
-            <h3 id="pub-heading">Recent publications</h3>
-            <p class="muted" style="margin-top:6px">Selected peer-reviewed or preprint work.</p>
+          <!-- Sample Projects -->
+          <div class="card" id="projects" aria-labelledby="projects-heading" style="margin-top:16px">
+            <h3 id="projects-heading">Sample projects</h3>
+            <p class="muted" style="margin-top:6px">Representative work — available as client case studies or anonymized summaries.</p>
+
             <ul class="pub-list" style="margin-top:12px">
               <li>
-                <strong>Lastname, Y.</strong> (2025). Title of paper on retinal multispectral imaging. <span class="muted">Journal / preprint</span>
+                <strong>Compact ophthalmic objective</strong> — High-NA, diffraction-limited objective for retinal imaging. Delivered Zemax sequential model, tolerance budget, and manufacturing pack.
               </li>
               <li>
-                <strong>Lastname, Y.</strong> (2024). Fluidic lens control for rapid focal tuning. <span class="muted">Conference / proceedings</span>
+                <strong>Industrial collimator array</strong> — Multi-element lens array with tight pointing and field uniformity specs. Performed non-sequential stray light analysis and stray suppression recommendations.
               </li>
               <li>
-                <strong>Lastname, Y.</strong> (2023). Open toolkit for optical metrology. <span class="muted">Repository / dataset</span>
+                <strong>Wide-field camera for inspection</strong> — Low-cost glass selection, optimization for off-axis aberrations, and Monte Carlo yield prediction for supplier quotes.
               </li>
             </ul>
+
             <div style="margin-top:12px">
-              <a class="navlink" href="#" aria-label="View all publications">View all →</a>
+              <a class="navlink" href="#contact" aria-label="Contact to request detailed case studies">Request case studies →</a>
             </div>
           </div>
 
-          <!-- About -->
+          <!-- About / Company -->
           <div class="card" id="about" style="margin-top:16px">
-            <h3>About</h3>
-            <p class="muted" style="margin-top:8px">I’m a PhD candidate researching retinal imaging. I enjoy designing compact optical systems, building reproducible experiments, and sharing code and hardware designs. My work spans simulation (ZEMAX/Code V), modeling (MATLAB / Python), and hands-on lab measurements.</p>
+            <h3>About Desert Optics Lab</h3>
+            <p class="muted" style="margin-top:8px">Founded by Dr. Alex Founder (PhD, Optical Sciences, University of Arizona), Desert Optics Lab combines academic rigor with industry-focused engineering. We help clients move from concept to manufacturable optical systems with clear analysis and documentation.</p>
 
             <div style="margin-top:12px" class="meta">
-              <span class="pill">Available for workshops</span>
-              <span class="pill">Open to collaboration</span>
+              <span class="pill">UArizona-trained optics</span>
+              <span class="pill">Industry & research experience</span>
             </div>
           </div>
         </div>
 
-        <!-- Right column: contact + social + quick links -->
+        <!-- Right column: contact + quick links -->
         <aside style="display:flex;flex-direction:column;gap:16px">
           <div class="card" id="contact" aria-labelledby="contact-heading">
-            <h3 id="contact-heading">Contact</h3>
-            <p class="muted">I'm happy to discuss collaborations, talks, or open positions.</p>
+            <h3 id="contact-heading">Contact & inquiry</h3>
+            <p class="muted">For project inquiries, quotes, or collaboration — get in touch.</p>
 
-            <!-- Simple contact — GitHub Pages cannot process POST forms without external service -->
             <form style="margin-top:12px" onsubmit="return sendMail();">
               <label class="sr-only" for="name">Name</label>
               <input id="name" name="name" placeholder="Your name" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-bottom:10px;background:transparent;color:inherit" required>
 
               <label class="sr-only" for="email">Email</label>
-              <input id="email" name="email" placeholder="you@example.com" type="email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-bottom:10px;background:transparent;color:inherit" required>
+              <input id="email" name="email" placeholder="you@company.com" type="email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);margin-bottom:10px;background:transparent;color:inherit" required>
 
-              <label class="sr-only" for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Brief message" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required></textarea>
+              <label class="sr-only" for="message">Project brief</label>
+              <textarea id="message" name="message" rows="4" placeholder="Short project description or requirements" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required></textarea>
 
               <div style="display:flex;gap:8px;margin-top:10px">
-                <button class="btn btn-primary" type="submit">Send email</button>
-                <a class="btn btn-ghost" href="mailto:you@example.com">Or email directly</a>
+                <button class="btn btn-primary" type="submit" id="quote">Request quote</button>
+                <a class="btn btn-ghost" href="mailto:hello@desertopticslab.com">Or email hello@desertopticslab.com</a>
               </div>
             </form>
 
-            <p class="muted" style="margin-top:8px;font-size:12px">Note: this form opens your email client. To accept form submissions directly on the site, integrate with a form service (Formspree, Netlify Forms, etc.).</p>
+            <p class="muted" style="margin-top:8px;font-size:12px">Tip: include target wavelength(s), field-of-view, working distance, and expected volumes to speed estimation.</p>
           </div>
 
           <div class="card" aria-labelledby="links-heading">
             <h3 id="links-heading">Quick links</h3>
             <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px">
-              <a class="navlink" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-              <a class="navlink" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-              <a class="navlink" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="navlink" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub (code & tools)</a>
+              <a class="navlink" href="https://scholar.google.com/" target="_blank" rel="noopener">Publications / citations</a>
+              <a class="navlink" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
 
-          <div class="card" aria-labelledby="skills-heading">
-            <h3 id="skills-heading">Skills</h3>
-            <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
-              <div class="muted">Optical design · Imaging systems · Electronics</div>
-              <div class="muted">MATLAB · Python · ZEMAX · Embedded C</div>
-            </div>
+          <div class="card" aria-labelledby="location-heading">
+            <h3 id="location-heading">Location</h3>
+            <div class="muted" style="margin-top:8px">Desert Optics Lab — Tucson, Arizona</div>
+            <div class="muted" style="margin-top:8px">Available for remote & on-site work across the US.</div>
           </div>
         </aside>
       </section>
 
       <footer>
-        <div>© <span id="year"></span> Your Name</div>
-        <div class="muted">Built with HTML · CSS · ❤️ — Hosted on GitHub Pages</div>
+        <div>© <span id="year"></span> Desert Optics Lab</div>
+        <div class="muted">Founder: Dr. Alex Founder (PhD, University of Arizona) — Lens design, tolerancing, Zemax</div>
       </footer>
     </main>
   </div>
@@ -350,14 +356,14 @@
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Simple "send" behaviour: open mail client with prefilled content
+    // "Send" behaviour: open mail client with prefilled content (GitHub Pages static site)
     function sendMail(){
-      var name = document.getElementById('name').value || 'Message';
+      var name = document.getElementById('name').value || 'Project inquiry';
       var email = document.getElementById('email').value || '';
       var msg = document.getElementById('message').value || '';
-      var subject = encodeURIComponent('Website message from ' + name);
+      var subject = encodeURIComponent('Project inquiry from ' + name);
       var body = encodeURIComponent(msg + '\n\n— Reply to: ' + email);
-      window.location.href = 'mailto:you@example.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:hello@desertopticslab.com?subject=' + subject + '&body=' + body;
       return false;
     }
 
