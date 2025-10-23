@@ -262,10 +262,21 @@
         <h3 id="contact-heading">Contact & inquiry</h3>
         <p class="muted">For project inquiries, quotes, or collaboration — fill out the form below.</p>
 
-        <!-- Google Form embed -->
-        <div style="margin-top:12px">
-            <iframe src="https://forms.gle/5XBXsjpDCK1X55JW9" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        <form
+  action="https://formspree.io/f/mpwygnbl"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
         <p class="muted" style="margin-top:8px;font-size:12px">
           Tip: include target wavelength(s), field-of-view, working distance, and expected volumes to speed estimation.
