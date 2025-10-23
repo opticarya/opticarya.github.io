@@ -262,21 +262,119 @@
         <h3 id="contact-heading">Contact & inquiry</h3>
         <p class="muted">For project inquiries, quotes, or collaboration — fill out the form below.</p>
 
-        <form
-  action="https://formspree.io/f/mpwygnbl"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+
+    form {
+      background-color: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      font-family: inherit;
+      font-size: 16px;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0078d4;
+      box-shadow: 0 0 4px rgba(0,120,212,0.3);
+    }
+
+    button {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #005ea2;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Pristine Optics</h1>
+  <p>We’d love to hear from you! Please fill out the form below.</p>
+
+ form {
+      background-color: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea, button {
+      font-family: inherit;
+      font-size: 16px;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0078d4;
+      box-shadow: 0 0 4px rgba(0,120,212,0.3);
+    }
+
+    button {
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #005ea2;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Pristine Optics</h1>
+  <p>We’d love to hear from you! Please fill out the form below.</p>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
         <p class="muted" style="margin-top:8px;font-size:12px">
           Tip: include target wavelength(s), field-of-view, working distance, and expected volumes to speed estimation.
